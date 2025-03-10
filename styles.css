@@ -1,0 +1,49 @@
+body { 
+    font-family: Arial, sans-serif; 
+    text-align: center; 
+}
+
+.loader { 
+    display: none; 
+    margin: 20px auto; 
+    border: 5px solid #f3f3f3; 
+    border-top: 5px solid #3498db; 
+    border-radius: 50%; 
+    width: 50px; 
+    height: 50px; 
+    animation: spin 1s linear infinite; 
+}
+
+@keyframes spin {
+     100% { transform: rotate(360deg); } 
+}
+
+.categories, .products { 
+    margin: 20px; 
+    display: flex; 
+    justify-content: center; 
+    gap: 10px; 
+    flex-wrap: wrap; 
+}
+
+.product { 
+    border: 1px solid #ddd; 
+    padding: 10px; 
+    width: 200px; 
+}
+
+.pagination { 
+    margin: 20px; 
+}
+
+.pagination button { 
+    padding: 10px; 
+    margin: 5px; 
+    cursor: pointer; 
+
+}
+
+.active { 
+    background-color: #3498db; 
+    color: white; 
+}
